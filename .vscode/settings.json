@@ -1,0 +1,6 @@
+{
+    "compile-hero.pug-output-directory": "../",
+    "compile-hero.stylus-output-directory": "../",
+    "emmet.triggerExpansionOnTab": true,
+    "compile-hero.disable-compile-files-on-did-save-code": false
+}

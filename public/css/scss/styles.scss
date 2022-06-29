@@ -52,6 +52,10 @@ body {
     border-radius: 100%;
 }
 
+img{
+    vertical-align:top;
+}
+
 .text-center {
     text-align: center;
 }
@@ -70,8 +74,8 @@ body {
 }
 
 .title a {
-    color: rgb(72, 12, 4);
-    font-size: 1.5em;
+    color:$text-color;
+    font-size: 1.2em;
     font-weight: 700;
 }
 
@@ -130,32 +134,35 @@ header {
     width:100%;
 }
 
-header>.container nav>ul {
+.nav-row{
     display: flex;
+    flex-wrap: wrap;
+
 }
 
-header>.container nav>ul>li {
-    margin-right: 30px;
+header>.container ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-header>.container nav>ul>li>a {
+header>.container ul>li {
+    margin-left: 30px;
+    margin-top: 40px;
+
+}
+
+header>.container ul>li>a {
     // line-height: ;
     color: $text-color;
-    font-size: 1.2em;
-    letter-spacing: 2px;
 }
 
 
-.header-area {
+
+
+
+.list {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;  
-
-}
-
-
-.icon {
-    padding-left: 10px;
 }
 
 
@@ -183,7 +190,7 @@ header>.container nav>ul>li>a {
 }
 
 
-.item-bgc{
+.bgc{
     background-color: $main-color;
 }
 
@@ -214,8 +221,26 @@ header>.container nav>ul>li>a {
     color: #ffffff;
 
 }
+ 
+.area-align{
+    align-content: center;
+}
 
-
+.icon-parent{
+    position: relative;
+}
+.icon-arrow-r{
+    position: absolute;
+    right: -10px;
+    top: 100px;
+    transform: translateY(-50%);
+}
+.icon-arrow-l{
+    position: absolute;
+    left: -10px;
+    top: 100px;
+    transform: translateY(-50%);
+}
 
 // main區塊結束==========
 
@@ -225,27 +250,22 @@ header>.container nav>ul>li>a {
 // 頁尾區塊開始
 footer {
     border-top: 1px solid $borderline;
-    height: 140px;
     padding: 40px 0px 40px 0；
 }
 
-footer>.container nav>ul {
-    margin-top: 20px;
-    display: flex;
-}
-
-footer>.container nav>ul>li {
-    margin-right: 30px;
-}
-
-footer>.container nav>ul>li>p {
-    // line-height: ;
-    display: block;
-    color: $text-color;
+dt  {
     font-size: 1.2em;
-    padding-bottom: 20px;
+    margin-top: 10px;
+}
 
+dd {
+    margin-bottom: 4px;
+    color: $text-color;
+}
 
+footer>.container p{
+    line-height: 20px;
+    margin-bottom: 20px;
 }
 
 // 首尾區塊結束
@@ -385,16 +405,16 @@ footer>.container nav>ul>li>p {
     }
 
     // css menu動畫star
-    nav {
-        //viewport width
-        height: 100vh;
-        left: px;
+    // nav {
+    //     //viewport width
+    //     // height: 100vh;
+    //     left: px;
 
-        // left: -100vw;
-        // 上面這一行等二層選單完成再開啟
-        // opacity: 0;
-        transition: all .3s;
-    }
+    //     // left: -100vw;
+    //     // 上面這一行等二層選單完成再開啟
+    //     // opacity: 0;
+    //     transition: all .3s;
+    // }
 
     .icon-menu:hover+nav {
         left: 0px;

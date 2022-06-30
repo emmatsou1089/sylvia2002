@@ -75,9 +75,6 @@ img {
 }
 
 
-.date {
-    color: #ac6610
-}
 
 
 
@@ -116,6 +113,10 @@ img {
 
 
 // 電腦版 開始
+
+body {
+    overflow-x: hidden;
+}
 
 // header區塊開始============
 
@@ -194,6 +195,10 @@ header>.container nav>ul>li:hover .submenu {
     .icon-menu {
         display: none;
     }
+
+    .icon-text {
+        display: none;
+    }
 }
 
 // min-width 768 end 
@@ -260,22 +265,25 @@ header>.container nav>ul>li:hover .submenu {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 100%;
     }
 
-    header > .container nav.active{
+    header>.container nav.active {
         display: block;
     }
-      
-    header> .container nav >ul{
+
+    header>.container nav>ul {
         display: block;
     }
-    header> .container nav > ul >li{
+
+    header>.container nav>ul>li {
         width: 100%;
-        text-align: center;    
-        border-bottom:1px solid $borderline;
+        text-align: center;
+        border-bottom: 1px solid $borderline;
     }
-    header> .container nav> ul >li >a{
-        display: block;    
+
+    header>.container nav>ul>li>a {
+        display: block;
     }
 
 
@@ -354,12 +362,10 @@ main>.container p {
     padding-bottom: 2em;
 }
 
-.h2-font {
 
-    padding-bottom: 100px
-}
 
 .title {
+    color: $text-color;
     padding-top: 20px;
 
 }
@@ -373,11 +379,25 @@ main>.container p {
 }
 
 
+
 .blue-icon {
     width: 33%;
     margin: 0px;
     // padding: 20px;
     box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+.h2-font {
+
+    padding-bottom: 100px
+}
+
+.h3-font {
+    padding-top: 30px;
+    color: #ffffff;
 }
 
 
@@ -405,7 +425,6 @@ main>.container p {
 }
 
 .item>ul>li {
-    color: #ffffff;
     border-top: 1px solid #ffffff;
     padding-left: 30px;
     padding-top: 20px;
@@ -414,7 +433,6 @@ main>.container p {
 }
 
 .item>ul>li>a {
-    list-style: none;
     color: #ffffff;
 
 }
@@ -422,6 +440,7 @@ main>.container p {
 
 // 粉色結束
 
+// 熱門+輪播 開始
 
 .hotproduct-align {
     align-content: center;
@@ -445,6 +464,9 @@ main>.container p {
     transform: translateY(-50%);
 }
 
+// 熱門+輪播 結束
+
+
 // main區塊結束==========
 
 
@@ -458,6 +480,7 @@ footer {
 dt {
     font-size: 1.2em;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 dd {
@@ -473,8 +496,9 @@ footer>.container p {
 // 首尾區塊結束\
 
 
+// 所有產品區
 
-// 所有產品 麵包屑
+//  麵包屑
 .breadcrumb {
     display: flex;
     margin-top: 20px;
@@ -484,4 +508,26 @@ footer>.container p {
 
 .breadcrumb a {
     color: black;
+}
+
+
+//  麵包屑結束
+
+
+.allprd-p {
+    color: $text-color;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 2em;
+
+}
+
+.btn-primary{
+    padding: 5px;
+    color:$text-color;
+    display: block;
+    // margin-bottom:5px;
+}
+.btn-primary:hover{
+    color:$primary-color;
 }

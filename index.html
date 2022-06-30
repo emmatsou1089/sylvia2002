@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
+
     <title>Sylvia</title>
 
     <link rel="stylesheet" href="public/css/styles.css">
@@ -18,20 +21,20 @@
             <div class="row flex-space-between">
                 <div class="row">
                     <a href="index.html">
-                        <img src="public/images/logo.png" alt="logo">
+                        <img  class="img-fluid img-logo" src="public/images/logo.png" alt="logo"></a>
 
-                        <!-- <a class="icon-menu" href="#">Menu</a></a> -->
+                    <a class="icon-menu" href="#">Menu</a></a>
 
                     <nav class="list">
                         <ul class="flex-space-between">
                             <li>
-                                <a href="#">所有產品</a>
+                                <a href="allproduct.html">所有產品</a>
                                 <!-- <ul class="submenu">
-                                    <li><a href="#">全部商品</a></li>
-                                    <li><a href="#">香氛蠟燭</a></li>
-                                    <li><a href="#">香氛擴香</a></li>
-                                    <li><a href="#">香氛吊卡</a></li>
-                                </ul> -->
+                                        <li><a href="#">全部商品</a></li>
+                                        <li><a href="#">香氛蠟燭</a></li>
+                                        <li><a href="#">香氛擴香</a></li>
+                                        <li><a href="#">香氛吊卡</a></li>
+                                    </ul> -->
                             </li>
                             <li>
                                 <a href="#">最新消息</a>
@@ -67,13 +70,32 @@
 
 
     <main>
-        <img class="img-parent img-fluid " src="public/images/1.png" alt="banner照片">
+        <img class="img-parent img-fluid " src="public/images/index-1.png" alt="banner照片">
         <!-- <img class="img-son img-fluid" src="public/images/index1-1.png" alt="bannere蓋板"> -->
-        <img class="img-fluid" src="public/images/index2.png" alt="banner照片">
 
+        <div class="bgc-blue">
+            <div class="container">
+                <h2 class="text-center">三大堅持</h2>
+                <div class="row flex-center ">
+                    <div class="  blue-icon">
+                        <img src="public/images/3thing-1.png" alt="">
+                        <h3 class="title ">品質把關</h3>
+                    </div>
 
+                    <div class=" blue-icon">
+                        <img src="public/images/3thing-2.png" alt="">
+                        <h3 class="title ">堅持原料</h3>
+                    </div>
 
-        <div class="bgc">
+                    <div class="  blue-icon">
+                        <img src="public/images/3thing-3.png" alt="">
+                        <h3 class="title ">選用天然</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bgc-pink">
             <div class="container">
                 <div class="item">
                     <h2>最新消息</h2>
@@ -107,30 +129,36 @@
         <div>
             <div class="container hotproduct-align ">
                 <h2 class="text-center">熱門商品</h2>
+
                 <div class="row  flex-center icon-parent ">
-                    <div class="icon-arrow-l"> <a href="#"><img src="public/images/arrow-left.png"
-                                alt="arrow1-left"></a> </div>
-
-                    <div class="col-4 col-md-4 col-lg-3">
-                        <a href="#">
-                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt=""></a>
-                        <p class="title text-center"><a href="#">薰衣草蠟燭</a></p>
+                    <div class="icon-arrow-l">
+                        <img src="public/images/arrow-left.png" alt="arrow1-left">
                     </div>
 
-                    <div class="col-4 col-md-4 col-lg-3">
+                    <div class="col-4 col-md-4 col-lg-4">
                         <a href="#">
-                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt=""></a>
-                        <p class="title text-center"><a href="#">玫瑰草蠟燭</a></p>
+                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                            <p class="title text-center">薰衣草蠟燭</p>
+                        </a>
                     </div>
 
-                    <div class="col-4 col-md-4 col-lg-3">
+                    <div class="col-4 col-md-4 col-lg-4">
                         <a href="#">
-                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt=""></a>
-                        <p class="title text-center"><a href="#">鳶尾花蠟燭</a></p>
+                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                            <p class="title text-center">玫瑰草蠟燭</p>
+                        </a>
                     </div>
 
-                    <div class="icon-arrow-r"> <a href="#"><img src="public/images/arrow-right.png"
-                                alt="arrow-right"></a> </div>
+                    <div class="col-4 col-md-4 col-lg-4">
+                        <a href="#">
+                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                            <p class="title text-center">鳶尾花蠟燭</p>
+                        </a>
+                    </div>
+
+                    <div class="icon-arrow-r">
+                        <img src="public/images/arrow-right.png" alt="arrow-right">
+                    </div>
 
                 </div>
             </div>

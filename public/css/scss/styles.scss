@@ -28,8 +28,9 @@ body {
 
 .container {
     margin: auto;
-    width: 90%;
+    width: 80%;
     max-width: 1140px;
+
 
 }
 
@@ -73,20 +74,12 @@ img{
     text-align: justify;
 }
 
-.title a {
-    color:$text-color;
-    font-size: 1.2em;
-    font-weight: 700;
-}
 
 .date {
     color: #ac6610
 }
 
-h2 {
-    font-size: 2em;
-    margin: 60px auto 30px auto;
-}
+
 
 .row {
     display: flex;
@@ -130,8 +123,14 @@ header {
     background-color: #ffffff;
     border-top: 10px solid $primary-color;
     border-bottom: 1px solid $borderline;
-    height: 140 px;
     width:100%;
+}
+
+
+
+.img-logo {
+    margin-top: 10px;
+   height: 70px;
 }
 
 header>.container nav>ul {
@@ -141,7 +140,8 @@ header>.container nav>ul {
 
 header>.container nav>ul>li {
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 
 }
 
@@ -150,38 +150,213 @@ header>.container nav>ul>li>a {
     color: $text-color;
 }
 
+
+
 .list {
     align-items: center;
     display: flex;
 }
 
 
+.icon{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+.submenu{
+    display: none;
+    background-color: $primary-color;
+}
+header > .container nav > ul > li:hover .submenu{
+    display: block;
+}
+.submenu>li{
+    line-height: 60px;
+    border-bottom:1px solid black;
+}
+.submenu>li>a{
+    color:black;
+    display: block;
+}
+
+
 // header區塊結束====
 
+.icon-menu{   
+    display: block;
+   background-image: url(public/images/);
+
+}
+
+
+
+// 超過768px以上執行 start電腦執行 
+@media (min-width:768px){
+   .icon-menu{
+       display: none;
+   }
+} // min-width 768 end 
+
+
+
+
+
+// 小於767px以下執行 start 手機執行
+
+@media (max-width:767px){
+ 
+    .icon-menu{
+        width: 15%;
+        display: block;
+        background-color: $primary-color;
+        color:black;
+        line-height: 60px;
+        text-align: center;
+    }
+    header{
+        position: relative;
+    }
+    header > .container nav{
+        width: 100%;
+        position: absolute;
+        top:120px;
+        background-color:$primary-color;
+        // display: none;
+        // 需要蓋板的話打開以下程式碼
+        // position: fixed;
+        // top:0px;
+        // height: 100vh;
+        // z-index: 999;
+
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height:0px;
+        // overflow: hidden;
+    }
+    nav{
+
+        left:0px;
+        left:-100vw;
+        transition: all .3s;
+    }
+    // 之後搭配javascript要改寫選取器的寫法
+    .icon-menu:hover + nav{
+        left:0px;
+
+        // 需要從上往下出現導覽時打開以下程式碼
+        // height: 244px;
+    }
+    header > .container nav.active{
+        display: block;
+    }
+    header > .container nav > ul{
+        display: block;
+    }
+    header > .container nav > ul > li{
+        text-align: center;
+        width: 100%;
+        border-bottom:1px solid $primary-color;
+    }
+    header > .container nav > ul > li > a{
+        display: block;
+    }
+    
+    .submenu{
+        display: none;
+        background-color: $primary-color;
+    }
+    header > .container nav > ul > li:hover .submenu{
+        display: block;
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom:1px solid black;
+    }
+    .submenu>li>a{
+        color:black;
+        display: block;
+    }
+} // max-width 767 end
+
+
+// 響應式區塊設定star
+
+
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
+}
+
+@media (min-width:768px){
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 768px end
+
+@media (min-width:1200px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 1200px end
+
+// 響應式區塊設定end
 
 
 // main區塊開始==========
 
-.img-parent {
-    position: relative;
+
+main>.container p{
+    color:$text-color;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+// 藍綠色開始
+.bgc-blue{
+    background-color:$primary-color;
+    padding:100px auto ;
 
 }
 
-.img-son {
-    content: '';
-    width: 100%;
-    height: auto;
-    transform: translatX(-50%);
-    transform: translatY(-50%);
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.title{
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.blue-icon {
+    width: 33%;
+    margin: 0px;
+    // padding: 20px;
+    box-sizing: border-box;
 }
 
 
-.bgc{
+// 藍綠色結束
+
+// 粉色開始
+
+.bgc-pink{
     background-color: $main-color;
+
 }
+
 
 .item {
     display: block;
@@ -211,6 +386,10 @@ header>.container nav>ul>li>a {
 
 }
  
+
+// 粉色結束
+
+
 .hotproduct-align{
     align-content: center;
 }
@@ -258,34 +437,18 @@ footer>.container p{
 
 // 首尾區塊結束\
 
-// 響應式區塊設定star
 
-@for $i from 1 through 12 {
-    .col-#{$i}{
-        --num: calc(12 / #{$i});
-        width: calc(100% / var(--num) - 30px);
-        margin: 0px 15px 40px 15px;
-    }
+
+// 所有產品 麵包屑
+.breadcrumb{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.breadcrumb a{
+    color:black;
 }
 
-@media (min-width:768px){
-    @for $i from 1 through 12 {
-        .col-md-#{$i}{
-            --num: calc(12 / #{$i});
-            width: calc(100% / var(--num) - 30px);
-            margin: 0px 15px 40px 15px;
-        }
-    }
-} // 768px end
 
-@media (min-width:1200px){
-    @for $i from 1 through 12 {
-        .col-lg-#{$i}{
-            --num: calc(12 / #{$i});
-            width: calc(100% / var(--num) - 30px);
-            margin: 0px 15px 40px 15px;
-        }
-    }
-} // 1200px end
 
-// 響應式區塊設定end

@@ -141,17 +141,29 @@ header > .container nav > ul > li:hover .submenu {
   display: block;
 }
 
-.icon-menu {
-  display: block;
-  background-image: url(public/images/);
-}
-
 @media (min-width: 768px) {
   .icon-menu {
     display: none;
   }
 }
 @media (max-width: 767px) {
+  .img-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .icon-arrow-l {
+    display: none;
+  }
+
+  .icon-arrow-r {
+    display: none;
+  }
+
   .icon-menu {
     width: 15%;
     display: block;
@@ -168,55 +180,24 @@ header > .container nav > ul > li:hover .submenu {
   header > .container nav {
     width: 100%;
     position: absolute;
-    top: 120px;
+    top: 80px;
     background-color: #9CDED2;
   }
 
   nav {
-    left: 0px;
-    left: -100vw;
+    right: 0px;
+    right: -100vw;
     transition: all 0.3s;
   }
 
   .icon-menu:hover + nav {
-    left: 0px;
+    right: 0px;
   }
 
-  header > .container nav.active {
-    display: block;
-  }
-
-  header > .container nav > ul {
-    display: block;
-  }
-
-  header > .container nav > ul > li {
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid #9CDED2;
-  }
-
-  header > .container nav > ul > li > a {
-    display: block;
-  }
-
-  .submenu {
-    display: none;
-    background-color: #9CDED2;
-  }
-
-  header > .container nav > ul > li:hover .submenu {
-    display: block;
-  }
-
-  .submenu > li {
-    line-height: 60px;
-    border-bottom: 1px solid black;
-  }
-
-  .submenu > li > a {
-    color: black;
-    display: block;
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .col-1 {
@@ -443,19 +424,34 @@ main > .container p {
   font-weight: 700;
 }
 
-h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.pt-1 {
+  padding-top: 10em;
 }
 
-.bgc-blue {
-  background-color: #9CDED2;
-  padding: 100px auto;
+.pb-1 {
+  padding-bottom: 2em;
+}
+
+.pt-2 {
+  padding-top: 5em;
+}
+
+.pb-2 {
+  padding-bottom: 2em;
+}
+
+.h2-font {
+  padding-bottom: 100px;
 }
 
 .title {
   padding-top: 20px;
-  padding-bottom: 70px;
+}
+
+.bgc-blue {
+  background-color: #9CDED2;
+  height: 300px;
+  padding: 100px auto;
 }
 
 .blue-icon {
@@ -471,10 +467,10 @@ h2 {
 .item {
   display: block;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 100px;
   padding-left: 120;
   padding-right: 120;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .item > h2 {

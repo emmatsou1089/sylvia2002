@@ -194,7 +194,7 @@ header > .container nav > ul > li:hover .submenu {
     right: 0px;
   }
 
-  .container .row {
+  .logo-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

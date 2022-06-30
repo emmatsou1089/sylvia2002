@@ -104,11 +104,6 @@ header {
   width: 100%;
 }
 
-.nav-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 header > .container nav > ul {
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +168,7 @@ header > .container nav > ul > li > a {
   color: #ffffff;
 }
 
-.area-align {
+.hotproduct-align {
   align-content: center;
 }
 

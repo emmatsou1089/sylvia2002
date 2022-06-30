@@ -134,12 +134,6 @@ header {
     width:100%;
 }
 
-.nav-row{
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
 header>.container nav>ul {
     display: flex;
     flex-wrap: wrap;
@@ -156,13 +150,10 @@ header>.container nav>ul>li>a {
     color: $text-color;
 }
 
-
-
 .list {
     align-items: center;
     display: flex;
 }
-
 
 
 // header區塊結束====
@@ -220,7 +211,7 @@ header>.container nav>ul>li>a {
 
 }
  
-.area-align{
+.hotproduct-align{
     align-content: center;
 }
 
@@ -241,7 +232,6 @@ header>.container nav>ul>li>a {
 }
 
 // main區塊結束==========
-
 
 
 
@@ -268,7 +258,7 @@ footer>.container p{
 
 // 首尾區塊結束\
 
-// 區塊設定
+// 響應式區塊設定star
 
 @for $i from 1 through 12 {
     .col-#{$i}{
@@ -297,3 +287,5 @@ footer>.container p{
         }
     }
 } // 1200px end
+
+// 響應式區塊設定end

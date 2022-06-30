@@ -199,6 +199,24 @@ header > .container nav > ul > li:hover .submenu {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  header > .container nav.active {
+    display: block;
+  }
+
+  header > .container nav > ul {
+    display: block;
+  }
+
+  header > .container nav > ul > li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #EFEFEF;
+  }
+
+  header > .container nav > ul > li > a {
+    display: block;
+  }
 }
 .col-1 {
   --num: calc(12 / 1);

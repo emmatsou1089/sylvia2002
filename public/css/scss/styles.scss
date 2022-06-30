@@ -254,8 +254,6 @@ header>.container nav>ul>li:hover .submenu {
     // 搭配javascript要改寫選取器的寫法
     .icon-menu:hover+nav {
         right: 0px;
-
-
     }
 
     .logo-menu {
@@ -264,6 +262,21 @@ header>.container nav>ul>li:hover .submenu {
         justify-content: space-between;
     }
 
+    header > .container nav.active{
+        display: block;
+    }
+      
+    header> .container nav >ul{
+        display: block;
+    }
+    header> .container nav > ul >li{
+        width: 100%;
+        text-align: center;    
+        border-bottom:1px solid $borderline;
+    }
+    header> .container nav> ul >li >a{
+        display: block;    
+    }
 
 
 

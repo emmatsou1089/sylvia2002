@@ -239,24 +239,7 @@ header {
 }
 
 
-// .submenu {
-//     display: none;
-//     background-color: $primary-color;
-// }
 
-// header>.container nav>ul>li:hover .submenu {
-//     display: block;
-// }
-
-// .submenu>li {
-//     line-height: 60px;
-//     border-bottom: 1px solid black;
-// }
-
-// .submenu>li>a {
-//     color: black;
-//     display: block;
-// }
 
 
 // header區塊結束===============================================
@@ -440,18 +423,29 @@ main>.container p {
 
 
 
-.pt-1 {
+.pt-10 {
     padding-top: 10em;
 
 }
 
-.pb-1 {
-    padding-bottom: 2em;
+.pb-10 {
+    padding-bottom: 10em;
+}
+
+
+
+.pt-5 {
+    padding-top: 5em;
+
+}
+
+.pb-5 {
+    padding-bottom: 5em;
+
 }
 
 .pt-2 {
-    padding-top: 5em;
-
+    padding-top: 2em;
 }
 
 .pb-2 {
@@ -518,21 +512,30 @@ main>.container p {
 
 .item>h2 {
     color: #ffffff;
+    padding-bottom: 30px;
+
 }
 
 .item>ul>li {
     border-top: 1px solid #ffffff;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
 
 }
 
-.item>ul>li>a {
+.item-date {
     color: #ffffff;
-
 }
 
+.item-tage {
+    color: #ffffff;
+    padding: 10px;
+}
+
+.item-title a {
+    color: #ffffff;
+}
 
 // 粉色結束
 
@@ -590,10 +593,10 @@ footer>.container p {
 }
 
 
-.page-top{
+.page-top {
     position: fixed;
     // right:10px;
-    bottom:10px;
+    bottom: 10px;
     background-color: $primary-color;
     width: 50px;
     line-height: 50px;
@@ -602,13 +605,14 @@ footer>.container p {
     text-align: center;
     // color:white;
     // display: none;
-    right:-60px;
+    right: -60px;
     // transform: rotate(0deg);
     // transition: all .3s;
 }
-.page-top.active{
+
+.page-top.active {
     // display: block;
-    right:10px;
+    right: 10px;
     // transform: rotate(360deg);
 }
 
@@ -619,7 +623,9 @@ footer>.container p {
 // 首尾區塊結束=========================================================
 
 
-// 所有產品區
+
+
+// 所有產品區star==========================================================
 
 //  麵包屑
 .breadcrumb {
@@ -652,6 +658,105 @@ footer>.container p {
     // margin-bottom:5px;
 }
 
-.btn-primary:hover {
-    color: $primary-color;
+// .btn-primary:hover {
+//     color: $primary-color;
+// }
+
+.tab-link {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.tab-link>a {
+    text-decoration: none;
+    width: 31%;
+    margin: 1%;
+    line-height: 40px;
+    color: #194663;
+    text-align: center;
+    display: block;
+    background-color: lightgray;
+}
+
+.tab-link>a.active {
+    color:#9CDED2;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+// 所有產品區 end==========================================================
+
+
+
+// 產品細節區 star==========================================================
+
+.main-img {
+    margin-bottom: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnails>img {
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.thumbnails>img.active {
+    border: 2px solid orange;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    padding: 5px 0px;
+    background-color: $primary-color;
+    color: #ffffff;
+    border-radius: 5px;
+    // border: none;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #F0A7A7;
+}
+
+.product-title {
+    margin-bottom: 20px;
+}
+
+.product-word>h4,
+h3,
+p {
+    margin-bottom: 10px;
+    line-height: 1.2em;
+}
+
+
+
+
+
+
+// 產品細節區 end==========================================================
+
+
+// news區 star=================================================================
+
+.border-line {
+    border: 1px solid $text-color;
+    border-radius: 0.5px;
+
+}
+
+// news區 end=================================================================

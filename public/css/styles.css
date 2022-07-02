@@ -758,10 +758,8 @@ footer > .container p {
   line-height: 2em;
 }
 
-.btn-primary {
-  padding: 5px;
-  color: #4D4D4D;
-  display: block;
+.allprd-h3 {
+  margin-left: 20px;
 }
 
 .tab-link > li > a {

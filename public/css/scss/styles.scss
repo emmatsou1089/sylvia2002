@@ -658,28 +658,25 @@ footer>.container p {
     // margin-bottom:5px;
 }
 
-// .btn-primary:hover {
-//     color: $primary-color;
+
+// .tab-link {
+//     display: flex;
+//     flex-wrap: wrap;
 // }
 
-.tab-link {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.tab-link>a {
+.tab-link>li>a {
     text-decoration: none;
     width: 31%;
     margin: 1%;
     line-height: 40px;
-    color: #194663;
+    color: $text-color;
     text-align: center;
-    display: block;
-    background-color: lightgray;
+    // display: block;
+    // background-color: rgb(125, 33, 33);
 }
 
-.tab-link>a.active {
-    color:#9CDED2;
+.tab-link>li>a.active {
+    color:$primary-color;
 }
 
 .tab-content {

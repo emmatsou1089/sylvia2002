@@ -764,23 +764,16 @@ footer > .container p {
   display: block;
 }
 
-.tab-link {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tab-link > a {
+.tab-link > li > a {
   text-decoration: none;
   width: 31%;
   margin: 1%;
   line-height: 40px;
-  color: #194663;
+  color: #4D4D4D;
   text-align: center;
-  display: block;
-  background-color: lightgray;
 }
 
-.tab-link > a.active {
+.tab-link > li > a.active {
   color: #9CDED2;
 }
 

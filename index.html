@@ -20,25 +20,30 @@
         <div class="container">
             <div class="row flex-space-between">
                 <div class="row logo-menu">
-                     <a href="index.html">
-                            <img class="img-fluid img-logo" src="public/images/logo.png" alt="logo"></a>
-                    <a class="icon-menu" href="#">Menu</a></a>
-
+                    <h1> <a href="index.html">
+                            <img class="img-fluid img-logo" src="public/images/logo.png" alt="logo"></a></h1>
+                            <a class="icon-menu display-md-none" id="btn-nav-switch" href="javascript:;"> 
+                                <img src="public/images/menu.png "width="100%" alt=""></a>
+                                
                     <nav class="list">
-
 
                         <ul class="flex-space-between">
                             <li>
-                                <a href="allproduct.html">所有產品</a>
-                                <!-- <ul class="submenu">
-                                        <li><a href="#">全部商品</a></li>
-                                        <li><a href="#">香氛蠟燭</a></li>
-                                        <li><a href="#">香氛擴香</a></li>
-                                        <li><a href="#">香氛吊卡</a></li>
-                                    </ul> -->
+                                <a href="javascript:;">所有產品</a>
+                                    <ul class="submenu">
+                                        <li><a href="allproduct.html">全部商品</a></li>
+                                        <li><a href="allproduct.html">香氛蠟燭</a></li>
+                                        <li><a href="allproduct.html">香氛擴香</a></li>
+                                        <li><a href="allproduct.html">香氛吊卡</a></li>
+                                    </ul>
                             </li>
                             <li>
                                 <a href="#">最新消息</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">優惠活動</a></li>
+                                        <li><a href="#">體驗活動</a></li>
+                                        <li><a href="#">徵才活動</a></li>
+                                    </ul>
                             </li>
                             <li><a href="#">關於我們</a></li>
                             <li><a href="#">門市據點</a></li>
@@ -74,7 +79,6 @@
 
     <main>
         <img class="img-parent img-fluid " src="public/images/index-1.png" alt="banner照片">
-        <!-- <img class="img-son img-fluid" src="public/images/index1-1.png" alt="bannere蓋板"> -->
 
         <div class="bgc-blue pt-1 pb-1">
             <div class="container">
@@ -104,11 +108,11 @@
                     <h2>最新消息</h2>
                     <ul>
                         <li>
-                            <a href="#">2022.05.30 最新活動 歡慶20周年全館8折優惠</a>
+                            <a href="#">2022.05.30 優惠活動 歡慶20周年全館8折優惠</a>
                         </li>
 
                         <li>
-                            <a href="#">2022.05.13 課程資訊 香氣蠟燭體驗6/15報名截止</a>
+                            <a href="#">2022.05.13 體驗活動 香氣蠟燭體驗6/15報名截止</a>
                         </li>
 
                         <li>
@@ -193,12 +197,17 @@
             </div>
 
             <p class="copyright text-center">Copyright©2022 Sylvia</p>
+        <a class="page-top" href="javascript:;"> <img src="public/images/top-up.svg" alt="top-up"></a>
+
 
         </div>
 
     </footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="public/js/index.js"></script>
 
 
 

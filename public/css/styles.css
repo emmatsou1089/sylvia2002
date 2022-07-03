@@ -859,7 +859,12 @@ p {
 
 .news-h3 {
   padding-top: 10px;
+  padding-left: 30px;
   padding-bottom: 5px;
+}
+
+.news-p {
+  padding-left: 30px;
 }
 
 .about-bgc {

@@ -28,7 +28,7 @@ body {
 }
 
 .img-rounded {
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .img-circle {
@@ -53,6 +53,14 @@ img {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-color-w {
+  color: #ffffff;
+}
+
+.text-color-b {
+  color: #4D4D4D;
 }
 
 .row {
@@ -531,6 +539,16 @@ header {
   .submenu.active {
     display: block;
   }
+
+  .allproduct-aside {
+    text-align: center;
+    border: 1px solid #4D4D4D;
+    border-radius: 5px;
+  }
+
+  .about-p {
+    padding-left: 0px;
+  }
 }
 @media (min-width: 768px) {
   .display-md-none {
@@ -585,6 +603,12 @@ header {
   .submenu.active {
     display: block;
   }
+
+  .about-p {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 20px;
+  }
 }
 main > .container p {
   color: #4D4D4D;
@@ -634,13 +658,12 @@ main > .container p {
   text-align: center;
 }
 
-.h2-font {
-  padding-bottom: 100px;
+.index-h2-pb80 {
+  padding-bottom: 80px;
 }
 
-.h3-font {
+.index-h3-pt30 {
   padding-top: 30px;
-  color: #ffffff;
 }
 
 .bgc-pink {
@@ -832,4 +855,21 @@ p {
 .border-line {
   border: 1px solid #4D4D4D;
   border-radius: 0.5px;
+}
+
+.news-h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.about-bgc {
+  background-color: #9CDED2;
+}
+
+.about-h2 {
+  padding-bottom: 70px;
+}
+
+.about-h3 {
+  padding-top: 30px;
 }

@@ -1,9 +1,10 @@
 // 新增一個style.scss在scss資較夾內
 
-$primary-color: #9CDED2;
-$main-color: #F0A7A7;
-$text-color: #4D4D4D;
-$borderline: #EFEFEF;
+$color-b: #9CDED2;
+$color-p: #F0A7A7;
+$color-black: #4D4D4D;
+$color-whiteG: #EFEFEF;
+$color-white: #ffffff;
 
 
 
@@ -44,7 +45,7 @@ body {
 }
 
 .img-rounded {
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .img-circle {
@@ -72,6 +73,13 @@ img {
     text-align: justify;
 }
 
+.text-color-w {
+    color: $color-white;
+}
+
+.text-color-b {
+    color: $color-black;
+}
 
 
 .row {
@@ -196,9 +204,9 @@ body {
 // header區塊開始========================================================
 
 header {
-    background-color: #ffffff;
-    border-top: 10px solid $primary-color;
-    border-bottom: 1px solid $borderline;
+    background-color: $color-white;
+    border-top: 10px solid $color-b;
+    border-bottom: 1px solid $color-whiteG;
     width: 100%;
 }
 
@@ -222,7 +230,7 @@ header {
 
 // header>.container nav>ul>li>a {
 //     // line-height: ;
-//     color: $text-color;
+//     color: $color-black;
 // }
 
 
@@ -305,7 +313,7 @@ header {
         line-height: 60px;
         width: 100%;
         text-align: center;
-        background-color: #ffffff;
+        background-color: $color-white;
 
     }
 
@@ -313,8 +321,8 @@ header {
         display: block;
         text-align: center;
         font-weight: 700;
-        color: $primary-color;
-        border-bottom: 1px solid $primary-color;
+        color: $color-b;
+        border-bottom: 1px solid $color-b;
     }
 
 
@@ -324,14 +332,35 @@ header {
     }
 
     .submenu a {
-        color: $text-color;
+        color: $color-black;
     }
 
     .submenu.active {
         display: block;
     }
 
+
+
+// 手機-首頁-end//
+
+// 手機-allproduct-star//
+
+.allproduct-aside{
+    text-align: center;
+    border: 1px solid $color-black;
+    border-radius: 5px;
 }
+
+
+// 手機-aboutus-start//
+
+.about-p{
+    padding-left:0px;
+
+}
+
+}
+
 
 // max-width 767 end手機板==============
 
@@ -377,7 +406,7 @@ header {
 
     header>.container nav>ul>li>a {
         // line-height: ;
-        color: $text-color;
+        color: $color-black;
         font-weight: 700;
     }
 
@@ -389,19 +418,39 @@ header {
         top: 40px;
         left: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: $color-white;
         padding: 10px;
     }
 
 
     .submenu a {
-        color: $text-color;
+        color: $color-black;
 
     }
 
     .submenu.active {
         display: block;
     }
+
+// 電腦-首頁-end//
+
+
+
+
+
+
+
+// 電腦-abouts-star//
+    .about-p {
+        padding-left: 140px;
+        padding-right: 140px;
+        font-size: 20px;
+    }
+
+
+
+
+
 
 
 }
@@ -416,7 +465,7 @@ header {
 
 
 main>.container p {
-    color: $text-color;
+    color: $color-black;
     font-size: 1.2em;
     font-weight: 700;
 }
@@ -455,14 +504,14 @@ main>.container p {
 
 
 .title {
-    color: $text-color;
+    color: $color-black;
     padding-top: 20px;
 
 }
 
 // 藍綠色開始
 .bgc-blue {
-    background-color: $primary-color;
+    background-color: $color-b;
     height: 300px;
     padding: 100px auto;
 
@@ -480,14 +529,12 @@ main>.container p {
 
 
 
-.h2-font {
-
-    padding-bottom: 100px
+.index-h2-pb80 {
+    padding-bottom: 80px
 }
 
-.h3-font {
+.index-h3-pt30 {
     padding-top: 30px;
-    color: #ffffff;
 }
 
 
@@ -496,7 +543,7 @@ main>.container p {
 // 粉色開始
 
 .bgc-pink {
-    background-color: $main-color;
+    background-color: $color-p;
 
 }
 
@@ -511,13 +558,13 @@ main>.container p {
 }
 
 .item>h2 {
-    color: #ffffff;
+    color: $color-white;
     padding-bottom: 30px;
 
 }
 
 .item>ul>li {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid $color-white;
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -525,16 +572,16 @@ main>.container p {
 }
 
 .item-date {
-    color: #ffffff;
+    color: $color-white;
 }
 
 .item-tage {
-    color: #ffffff;
+    color: $color-white;
     padding: 10px;
 }
 
 .item-title a {
-    color: #ffffff;
+    color: $color-white;
 }
 
 // 粉色結束
@@ -572,7 +619,7 @@ main>.container p {
 
 // 頁尾區塊開始=====================================================
 footer {
-    border-top: 1px solid $borderline;
+    border-top: 1px solid $color-whiteG;
     padding: 40px 0px 40px 0；
 }
 
@@ -584,7 +631,7 @@ dt {
 
 dd {
     margin-bottom: 4px;
-    color: $text-color;
+    color: $color-black;
 }
 
 footer>.container p {
@@ -597,7 +644,7 @@ footer>.container p {
     position: fixed;
     // right:10px;
     bottom: 10px;
-    background-color: $primary-color;
+    background-color: $color-b;
     width: 50px;
     line-height: 50px;
     border-radius: 50%;
@@ -618,9 +665,10 @@ footer>.container p {
 
 
 
+// 首尾區塊結束
 
 
-// 首尾區塊結束=========================================================
+// 首頁區塊end=========================================================
 
 
 
@@ -644,20 +692,20 @@ footer>.container p {
 
 
 .allprd-p {
-    color: $text-color;
+    color: $color-black;
     font-size: 1.2em;
     font-weight: 700;
     line-height: 2em;
 
 }
 
-.allprd-h3{
+.allprd-h3 {
     margin-left: 20px;
 }
 
 // .btn-primary {
 //     padding: 5px;
-//     color: $text-color;
+//     color: $color-black;
 //     display: block;
 //     // margin-bottom:5px;
 // }
@@ -673,14 +721,14 @@ footer>.container p {
     width: 31%;
     margin: 1%;
     line-height: 40px;
-    color: $text-color;
+    color: $color-black;
     text-align: center;
     // display: block;
     // background-color: rgb(125, 33, 33);
 }
 
 .tab-link>li>a.active {
-    color:$primary-color;
+    color: $color-b;
 }
 
 .tab-content {
@@ -722,8 +770,8 @@ footer>.container p {
     display: block;
     text-align: center;
     padding: 5px 0px;
-    background-color: $primary-color;
-    color: #ffffff;
+    background-color: $color-b;
+    color: $color-white;
     border-radius: 5px;
     // border: none;
     font-weight: 700;
@@ -746,18 +794,40 @@ p {
 
 
 
-
-
-
 // 產品細節區 end==========================================================
+
+
+
 
 
 // news區 star=================================================================
 
 .border-line {
-    border: 1px solid $text-color;
+    border: 1px solid $color-black;
     border-radius: 0.5px;
 
 }
 
+.news-h3{
+    padding-top:10px;
+    padding-bottom: 5px;
+
+}
+
 // news區 end=================================================================
+
+// aboutus區 star================================================================
+
+.about-bgc {
+    background-color: $color-b;
+}
+
+.about-h2 {
+    padding-bottom: 70px;
+}
+
+.about-h3 {
+    padding-top: 30px;
+
+}
+

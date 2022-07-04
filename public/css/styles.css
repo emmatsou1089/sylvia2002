@@ -445,7 +445,7 @@ body {
 header {
   background-color: #ffffff;
   border-top: 10px solid #9CDED2;
-  border-bottom: 1px solid #EFEFEF;
+  border-bottom: 1px solid #CCCCCC;
   width: 100%;
 }
 
@@ -743,7 +743,7 @@ main > .container p {
 }
 
 footer {
-  border-top: 1px solid #EFEFEF;
+  border-top: 1px solid #CCCCCC;
   padding: 40px 0px 40px 0；;
 }
 
@@ -869,7 +869,7 @@ p {
 }
 
 .border-line {
-  border: 1px solid #4D4D4D;
+  border: 1px solid #CCCCCC;
   border-radius: 0.5px;
 }
 
@@ -893,4 +893,10 @@ p {
 
 .about-h3 {
   padding-top: 30px;
+}
+
+.form {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #F0A7A7;
 }

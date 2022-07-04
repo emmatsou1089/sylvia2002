@@ -3,7 +3,7 @@
 $color-b: #9CDED2;
 $color-p: #F0A7A7;
 $color-black: #4D4D4D;
-$color-whiteG: #EFEFEF;
+$color-whiteG: #CCCCCC;
 $color-white: #ffffff;
 
 
@@ -822,7 +822,7 @@ p {
 // news區 star=================================================================
 
 .border-line {
-    border: 1px solid $color-black;
+    border: 1px solid $color-whiteG;
     border-radius: 0.5px;
 
 }
@@ -858,3 +858,10 @@ p {
 
 }
 
+//account star
+
+.form{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #F0A7A7;
+}

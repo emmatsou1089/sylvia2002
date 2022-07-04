@@ -341,7 +341,9 @@ header {
         display: block;
     }
 
-
+    .copyright{
+        text-align: left;
+    }
 
 // 手機-首頁-end//
 
@@ -440,6 +442,10 @@ header {
 
     .submenu.active {
         display: block;
+    }
+
+    .copyright{
+        text-align: center;
     }
 
 // 電腦-首頁-end//

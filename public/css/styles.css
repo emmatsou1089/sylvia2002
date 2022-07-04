@@ -540,6 +540,10 @@ header {
     display: block;
   }
 
+  .copyright {
+    text-align: left;
+  }
+
   .allproduct-aside {
     text-align: center;
     border: 1px solid #4D4D4D;
@@ -606,6 +610,10 @@ header {
 
   .submenu.active {
     display: block;
+  }
+
+  .copyright {
+    text-align: center;
   }
 
   .product-image-2 {

@@ -546,6 +546,10 @@ header {
     border-radius: 5px;
   }
 
+  .product-image-1 {
+    display: none;
+  }
+
   .about-p {
     padding-left: 0px;
   }
@@ -602,6 +606,10 @@ header {
 
   .submenu.active {
     display: block;
+  }
+
+  .product-image-2 {
+    display: none;
   }
 
   .about-p {

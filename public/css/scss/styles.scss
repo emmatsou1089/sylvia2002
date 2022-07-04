@@ -279,8 +279,8 @@ header {
         margin-top: 15px;
         width: 15%;
         display: block;
-        
-        
+
+
         line-height: 60px;
         text-align: center;
     }
@@ -341,35 +341,35 @@ header {
         display: block;
     }
 
-    .copyright{
+    .copyright {
         text-align: left;
     }
 
-// 手機-首頁-end//
+    // 手機-首頁-end//
 
-// 手機-allproduct-star//
+    // 手機-allproduct-star//
 
-.allproduct-aside{
-    text-align: center;
-    border: 1px solid $color-black;
-    border-radius: 5px;
-}
-
-
-
-// 手機-product
+    .allproduct-aside {
+        text-align: center;
+        border: 1px solid $color-black;
+        border-radius: 5px;
+    }
 
 
-.product-image-1{
-    display: none;
-}
 
-// 手機-aboutus-start//
+    // 手機-product
 
-.about-p{
-    padding-left:0px;
 
-}
+    .product-image-1 {
+        display: none;
+    }
+
+    // 手機-aboutus-start//
+
+    .about-p {
+        padding-left: 0px;
+
+    }
 
 }
 
@@ -444,22 +444,22 @@ header {
         display: block;
     }
 
-    .copyright{
+    .copyright {
         text-align: center;
     }
 
-// 電腦-首頁-end//
+    // 電腦-首頁-end//
 
-//電腦-product//
-.product-image-2{
-    display: none;
-}
-
-
+    //電腦-product//
+    .product-image-2 {
+        display: none;
+    }
 
 
 
-// 電腦-abouts-star//
+
+
+    // 電腦-abouts-star//
     .about-p {
         padding-left: 140px;
         padding-right: 140px;
@@ -827,14 +827,14 @@ p {
 
 }
 
-.news-h3{
-    padding-top:10px;
+.news-h3 {
+    padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 5px;
 
 }
 
-.news-p{
+.news-p {
     padding-left: 30px;
 
 
@@ -858,10 +858,53 @@ p {
 
 }
 
-//account star
+//account star===============================
 
-.form{
+.form {
     margin-top: 80px;
     margin-bottom: 80px;
-    background-color: #F0A7A7;
+    //  background-color: #F0A7A7;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+label{
+    display: block;
+    width: 20%;
+    padding: 3px;
+}
+
+input {
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid $color-black;
+}
+
+.btn-two{
+    width: 100%;
+    background-color: $color-b;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .2em;
+    padding: 3px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-two:hover{
+    background-color:$color-p;
+    color: #ffffff;
+
+}
+
+.btn-a{
+    color: $color-black;
+}
+.u{
+    box-shadow:0 1px ;
 }

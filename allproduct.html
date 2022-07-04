@@ -435,13 +435,13 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script>
-        $('.tab-link>li>a').on('click', function (e) {
+        $('.tab-link>li').on('click', function (e) {
             e.preventDefault()
-            $(this).addClass('active')
-            $(this).siblings().removeClass('active')
-            console.log($(this).attr('href'))
-            $($(this).attr('href')).addClass('active')
-            $($(this).attr('href')).siblings().removeClass('active')
+            $(this).find('a').addClass('active')
+            $(this).siblings().find('a').removeClass('active')
+            console.log($(this).find('a').attr('href'))
+            $($(this).find('a').attr('href')).addClass('active')
+            $($(this).find('a').attr('href')).siblings().removeClass('active')
         })//.tab-link>a end
 
     </script>

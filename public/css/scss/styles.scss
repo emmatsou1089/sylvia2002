@@ -278,12 +278,11 @@ header {
 
     .icon-menu {
         margin-top: 15px;
-        width: 15%;
+        width: 10%;
         display: block;
-
-
         line-height: 60px;
         text-align: center;
+        align-items: center;
     }
 
 
@@ -291,6 +290,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
@@ -910,9 +910,7 @@ input {
 
 }
 
-.btn-p{
-    
-}
+
 
 .btn-two a{
     color: #000000;

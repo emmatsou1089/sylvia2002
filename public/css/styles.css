@@ -942,3 +942,7 @@ input {
 .u {
   box-shadow: 0 1px;
 }
+
+.fb-icon {
+  background-image: url(public/images/FB-iocn.png);
+}

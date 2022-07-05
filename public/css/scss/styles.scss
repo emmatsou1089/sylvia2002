@@ -807,10 +807,14 @@ footer>.container p {
 .product-word>h4,
 h3,
 p {
-    margin-bottom: 10px;
+    margin: 20px 0;
     line-height: 1.2em;
 }
 
+.product-image-1 img.img-fluid{
+    // width: 80%;
+    max-width: 200px;
+}
 
 
 // 產品細節區 end==========================================================
@@ -887,19 +891,26 @@ input {
 .btn-two{
     width: 100%;
     background-color: $color-b;
-    color: #fff;
     font-size: 16px;
     letter-spacing: .2em;
     padding: 3px;
     margin-bottom: 10px;
     border-radius: 5px;
+    border: 1px solid $color-black;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-two:hover{
     background-color:$color-p;
     color: #ffffff;
 
+}
+
+.btn-two a{
+    color: #000000;
 }
 
 .btn-a{
@@ -909,6 +920,30 @@ input {
     box-shadow:0 1px ;
 }
 
-.fb-icon{
-    background-image: url(public/images/FB-iocn.png);
+
+
+
+
+// 門市據點star=========
+
+.blue-bgc{
+    background-color: #9CDED2;
+    margin:20px auto;
+  
+}
+.store-l ,.store-r{
+    width:100%;
+    align-items: center;
+    padding: 40px 0px;
+    justify-content: center; 
+    text-align: center; 
+}
+
+
+
+
+
+.store-img{
+    align-items: center;
+    width: 40%;
 }

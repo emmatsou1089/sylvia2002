@@ -893,7 +893,7 @@ input {
     background-color: $color-b;
     font-size: 16px;
     letter-spacing: .2em;
-    padding: 3px;
+    padding: 2px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid $color-black;
@@ -909,18 +909,30 @@ input {
 
 }
 
+.btn-p{
+    
+}
+
 .btn-two a{
     color: #000000;
+    
 }
 
 .btn-a{
     color: $color-black;
+    
 }
 .u{
     box-shadow:0 1px ;
 }
 
+.btn-img{
+    width:20%;
+    padding-left: 5px;
+    align-items: center;
+}
 
+//account end===============================
 
 
 
@@ -947,3 +959,5 @@ input {
     align-items: center;
     width: 40%;
 }
+
+// 門市據點end=========

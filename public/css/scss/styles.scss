@@ -767,8 +767,15 @@ footer>.container p {
 
 .main-img {
     margin-bottom: 10px;
-    width: 75%;
+    width: 100%;
 }
+
+.right-img{
+    width: 30%;
+    margin: 0 5%;
+
+}
+
 
 
 
@@ -806,7 +813,8 @@ footer>.container p {
     background-color: #F0A7A7;
 }
 
-.product-title {
+
+.product-word>h3 {
     margin-bottom: 20px;
 }
 

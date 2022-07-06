@@ -628,6 +628,94 @@ header {
     font-size: 20px;
   }
 }
+body {
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
+.parent {
+  /* 可視範圍寬 */
+  /* width: 500px; */
+  width: 95%;
+  /* max-width: 600px; */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.child {
+  /* 圖片寬度*項目個數 */
+  /* width: 2000px; */
+  /* 去除行內空白，文字大小0 */
+  font-size: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.parent img {
+  /* 同.parent寬 */
+  width: px;
+}
+
+/* div時用float */
+/* .son{
+    float: left;
+} */
+.left-arrow, .right-arrow {
+  position: absolute;
+  cursor: pointer;
+  /* background-color: rgba(255, 255, 255, 0.52); */
+  width: 40px;
+  height: 100%;
+  top: 0px;
+  /* 設定較小塊的感應區 */
+  /* height: 40px; */
+  /* top:50%; */
+  /* transform: translateY(-50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.left-arrow {
+  left: 0px;
+}
+
+.right-arrow {
+  right: 0px;
+}
+
+.indicator {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicator > li {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.indicator > li:last-child {
+  margin-right: 0;
+}
+
+.indicator > li.active {
+  background-color: tomato;
+}
+
 main > .container p {
   color: #4D4D4D;
   font-size: 1.2em;
@@ -879,7 +967,7 @@ p {
 }
 
 .product-image-1 img.img-fluid {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .math-bar {
@@ -944,7 +1032,6 @@ input {
   width: 100%;
   background-color: #9CDED2;
   font-size: 16px;
-  letter-spacing: 0.2em;
   padding: 2px;
   margin-bottom: 10px;
   border-radius: 5px;

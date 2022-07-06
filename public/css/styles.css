@@ -663,7 +663,8 @@ h1 {
 /* .son{
     float: left;
 } */
-.left-arrow, .right-arrow {
+.left-arrow,
+.right-arrow {
   position: absolute;
   cursor: pointer;
   /* background-color: rgba(255, 255, 255, 0.52); */
@@ -1060,9 +1061,9 @@ input {
 }
 
 .btn-img {
-  width: 20%;
-  padding-left: 5px;
+  width: 80%;
   align-items: center;
+  margin-right: 2px;
 }
 
 .blue-bgc {

@@ -466,43 +466,49 @@ header {
 // 輪播//
 
 
-body{
+body {
     margin: 0;
     /* overflow-x: hidden; */
 }
-.parent{
+
+.parent {
     /* 可視範圍寬 */
     /* width: 500px; */
-    width:95%;
+    width: 95%;
     /* max-width: 600px; */
     margin: auto;
     overflow: hidden;
     position: relative;
 }
-.child{
+
+.child {
     /* 圖片寬度*項目個數 */
     /* width: 2000px; */
     /* 去除行內空白，文字大小0 */
     font-size: 0;
 }
-h1{
+
+h1 {
     font-size: 40px;
 }
-.parent img{
+
+.parent img {
     /* 同.parent寬 */
     width: px;
 }
+
 /* div時用float */
 /* .son{
     float: left;
 } */
-.left-arrow, .right-arrow{
+.left-arrow,
+.right-arrow {
     position: absolute;
-    cursor:pointer;
+    cursor: pointer;
     /* background-color: rgba(255, 255, 255, 0.52); */
     width: 40px;
     height: 100%;
-    top:0px;
+    top: 0px;
     /* 設定較小塊的感應區 */
     /* height: 40px; */
     /* top:50%; */
@@ -510,28 +516,31 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+    color: white;
 }
-.left-arrow{
-    left:0px;
+
+.left-arrow {
+    left: 0px;
 }
-.right-arrow{
-    right:0px;
+
+.right-arrow {
+    right: 0px;
 }
 
 
 
-.indicator{
+.indicator {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     position: absolute;
-    bottom:10px;
-    left:50%;
+    bottom: 10px;
+    left: 50%;
     transform: translateX(-50%);
 }
-.indicator>li{
+
+.indicator>li {
     width: 10px;
     height: 10px;
     background-color: lightgray;
@@ -539,10 +548,12 @@ h1{
     margin-right: 10px;
     cursor: pointer;
 }
-.indicator>li:last-child{
+
+.indicator>li:last-child {
     margin-right: 0;
 }
-.indicator>li.active{
+
+.indicator>li.active {
     background-color: tomato;
 }
 
@@ -835,7 +846,7 @@ footer>.container p {
     width: 100%;
 }
 
-.right-img{
+.right-img {
     width: 30%;
     margin: 0 5%;
 
@@ -901,7 +912,7 @@ p {
     align-items: center;
     width: 15%;
     margin: 0;
-   border-radius: 0px;
+    border-radius: 0px;
 }
 
 // 產品細節區 end==========================================================
@@ -1012,10 +1023,17 @@ input {
 }
 
 .btn-img {
-    width: 20%;
-    padding-left: 5px;
+    width: 80%;
     align-items: center;
+    margin-right: 2px;
 }
+
+
+
+
+
+
+
 
 //account end===============================
 

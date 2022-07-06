@@ -826,6 +826,7 @@ footer > .container p {
 
 .main-img {
   margin-bottom: 10px;
+  width: 75%;
 }
 
 .thumbnails {
@@ -848,11 +849,13 @@ footer > .container p {
 .button {
   display: block;
   text-align: center;
-  padding: 5px 0px;
+  padding: 5px 10px;
   background-color: #9CDED2;
   color: #ffffff;
   border-radius: 5px;
   font-weight: 700;
+  width: 60%;
+  margin: 20px 10px;
 }
 
 .button:hover {
@@ -872,6 +875,14 @@ p {
 
 .product-image-1 img.img-fluid {
   max-width: 200px;
+}
+
+.math-bar {
+  text-align: center;
+  align-items: center;
+  width: 15%;
+  margin: 0;
+  border-radius: 0px;
 }
 
 .border-line {
@@ -967,7 +978,8 @@ input {
   margin: 20px auto;
 }
 
-.store-l, .store-r {
+.store-l,
+.store-r {
   width: 100%;
   align-items: center;
   padding: 40px 0px;

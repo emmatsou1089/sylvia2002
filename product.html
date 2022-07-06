@@ -89,9 +89,9 @@
         <section class="pt-2 pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-
-                        <div class="main-img"><img class="img-fluid" src="public/images/allprouduct-green.png" alt="">
+                    <div class="col-12 col-md-6 ">
+                        <div class="main-img ">
+                            <img class="img-fluid" src="public/images/allprouduct-green.png" alt="">
                         </div>
                         <div class="thumbnails">
                             <img class="active" src="public/images/allprouduct-green.png" alt="">
@@ -108,7 +108,14 @@
                             <h4>香調</h4>
                             <p class="product-description">柑橘、青檸、、薄荷、荷荷巴油、、葡萄柚、佛手柑</p>
                             <h3>NT$1,000</h3>
-                            <a class="button" href="#">加入購物車</a>
+                            <div >
+                                <!-- <div class="math-bar"> -->
+                                    <button id="minus">−</button>
+                                    <input  class="math-bar" type="number" value="0" id="input" />
+                                    <button id="plus">+</button>
+                                <!-- </div> -->
+                                <input class="button" type="submit" value="加入購物車"></li>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,7 +173,7 @@
                     <dd>本網站為學習使用</dd>
                 </dl>
 
-               
+
             </div>
             <p class="col-12 copyright ">Copyright©2022 Sylvia</p>
 
@@ -179,7 +186,8 @@
 
 
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="public/js/index.js"></script>
 
@@ -198,6 +206,26 @@
             $(this).siblings().removeClass('active')
 
         }) // .thumbnails>img end
+
+
+
+
+
+        const minusButton = document.getElementById('minus');
+        const plusButton = document.getElementById('plus');
+        const inputField = document.getElementById('input');
+
+        minusButton.addEventListener('click', event => {
+            event.preventDefault();
+            const currentValue = Number(inputField.value) || 0;
+            inputField.value = currentValue - 1;
+        });
+
+        plusButton.addEventListener('click', event => {
+            event.preventDefault();
+            const currentValue = Number(inputField.value) || 0;
+            inputField.value = currentValue + 1;
+        });
 
     </script>
 

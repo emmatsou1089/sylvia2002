@@ -242,7 +242,7 @@ header {
 
 
 .icon {
-    
+
     margin-left: 30px;
     margin-top: 40px;
 }
@@ -767,7 +767,10 @@ footer>.container p {
 
 .main-img {
     margin-bottom: 10px;
+    width: 75%;
 }
+
+
 
 .thumbnails {
     display: flex;
@@ -789,12 +792,14 @@ footer>.container p {
 .button {
     display: block;
     text-align: center;
-    padding: 5px 0px;
+    padding: 5px 10px;
     background-color: $color-b;
     color: $color-white;
     border-radius: 5px;
     // border: none;
     font-weight: 700;
+    width: 60%;
+    margin: 20px 10px;
 }
 
 .button:hover {
@@ -812,11 +817,19 @@ p {
     line-height: 1.2em;
 }
 
-.product-image-1 img.img-fluid{
+.product-image-1 img.img-fluid {
     // width: 80%;
     max-width: 200px;
 }
 
+.math-bar {
+    // background-color: #F0A7A7;
+    text-align: center;
+    align-items: center;
+    width: 15%;
+    margin: 0;
+   border-radius: 0px;
+}
 
 // 產品細節區 end==========================================================
 
@@ -876,7 +889,7 @@ p {
     display: flex;
 }
 
-label{
+label {
     display: block;
     width: 20%;
     padding: 3px;
@@ -889,7 +902,7 @@ input {
     border: 1px solid $color-black;
 }
 
-.btn-two{
+.btn-two {
     width: 100%;
     background-color: $color-b;
     font-size: 16px;
@@ -904,29 +917,30 @@ input {
     align-items: center;
 }
 
-.btn-two:hover{
-    background-color:$color-p;
+.btn-two:hover {
+    background-color: $color-p;
     color: #ffffff;
 
 }
 
 
 
-.btn-two a{
+.btn-two a {
     color: #000000;
-    
+
 }
 
-.btn-a{
+.btn-a {
     color: $color-black;
-    
-}
-.u{
-    box-shadow:0 1px ;
+
 }
 
-.btn-img{
-    width:20%;
+.u {
+    box-shadow: 0 1px;
+}
+
+.btn-img {
+    width: 20%;
     padding-left: 5px;
     align-items: center;
 }
@@ -937,24 +951,26 @@ input {
 
 // 門市據點star=========
 
-.blue-bgc{
+.blue-bgc {
     background-color: #9CDED2;
-    margin:20px auto;
-  
+    margin: 20px auto;
+
 }
-.store-l ,.store-r{
-    width:100%;
+
+.store-l,
+.store-r {
+    width: 100%;
     align-items: center;
     padding: 40px 0px;
-    justify-content: center; 
-    text-align: center; 
+    justify-content: center;
+    text-align: center;
 }
 
 
 
 
 
-.store-img{
+.store-img {
     align-items: center;
     width: 40%;
 }

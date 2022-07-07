@@ -375,6 +375,13 @@ header {
 
     }
 
+    .thumbnails>img{
+        width:45px ;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border:2px solid white;
+        cursor: pointer;
+    }
 }
 
 
@@ -869,30 +876,29 @@ footer>.container p {
     width: 100%;
 }
 
-.right-img {
-    width: 30%;
-    margin: 0 5%;
 
+
+
+
+.main-img{
+    margin-bottom: 10px;
 }
-
-
-
-
-.thumbnails {
+.thumbnails{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
-
-.thumbnails>img {
-    width: 100px;
+.thumbnails>img{     
+    width:73px ;
     margin-right: 10px;
     margin-bottom: 10px;
-    border: 2px solid white;
+    border:2px solid white;
     cursor: pointer;
 }
-
-.thumbnails>img.active {
-    border: 2px solid orange;
+.thumbnails>img:last-child{ 
+    margin-right: 0px;
+}
+.thumbnails>img.active{
+    border:2px solid #80C0A4;
 }
 
 .button {

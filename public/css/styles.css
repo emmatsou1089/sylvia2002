@@ -579,6 +579,14 @@ header {
   .about-p {
     padding-left: 0px;
   }
+
+  .thumbnails > img {
+    width: 45px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
 }
 @media (min-width: 768px) {
   .display-md-none {
@@ -849,9 +857,8 @@ footer > .container p {
   width: 100%;
 }
 
-.right-img {
-  width: 30%;
-  margin: 0 5%;
+.main-img {
+  margin-bottom: 10px;
 }
 
 .thumbnails {
@@ -860,15 +867,19 @@ footer > .container p {
 }
 
 .thumbnails > img {
-  width: 100px;
+  width: 73px;
   margin-right: 10px;
   margin-bottom: 10px;
   border: 2px solid white;
   cursor: pointer;
 }
 
+.thumbnails > img:last-child {
+  margin-right: 0px;
+}
+
 .thumbnails > img.active {
-  border: 2px solid orange;
+  border: 2px solid #80C0A4;
 }
 
 .button {

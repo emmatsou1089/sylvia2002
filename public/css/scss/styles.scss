@@ -220,6 +220,49 @@ body {
     overflow-x: hidden;
 }
 
+// loading
+.loading-overlay{
+    position: fixed;
+    /* top:0;
+    left:0;
+    right:0;
+    bottom:0; */
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: $color-white;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* left:-50vw */
+    /* display: none; */
+    transition: .3s all;
+    transition-delay: 1s;
+}
+.loading-overlay.active{
+    top:-100vh;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid $color-whiteG; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.loading-overlay img {
+    width: 150px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+
+
+
+
+
 // header區塊開始========================================================
 
 header {
@@ -898,7 +941,7 @@ footer>.container p {
     margin-right: 0px;
 }
 .thumbnails>img.active{
-    border:2px solid #80C0A4;
+    border:3px solid $color-p;
 }
 
 .button {
@@ -954,8 +997,15 @@ p {
 
 .border-line {
     border: 1px solid $color-whiteG;
-    border-radius: 0.5px;
+    border-radius: 5px;
+    margin: 0;
+    vertical-align: top;
 
+}
+
+.news-img{
+    // border-radius: 5px;
+    vertical-align: top;
 }
 
 .news-h3 {

@@ -161,4 +161,23 @@ function common() {
 
 setInterval(function () {
   $('.right-arrow').click();
-}, 5000);
+}, 5000); // 輪////////
+
+var currentLeftNum = 0;
+$('.right-arrow').on('click', function () {
+  if (currentLeftNum == -1000) {} else {
+    currentLeftNum = currentLeftNum - 1000;
+    console.log(currentLeftNum);
+    $('.good-child').animate({
+      'margin-left': currentLeftNum
+    });
+  }
+});
+$('.left-arrow').on('click', function () {
+  if (currentLeftNum == 0) {} else {
+    currentLeftNum = currentLeftNum + 1000;
+    $('.good-child').animate({
+      'margin-left': currentLeftNum
+    });
+  }
+});

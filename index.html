@@ -10,6 +10,11 @@
 
     <title>Sylvia</title>
 
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- slick theme css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
     <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
 
 
@@ -31,11 +36,11 @@
         <div class="container">
             <div class="row flex-space-between">
                 <div class="row logo-menu">
-                        <h1> <a href="index.html">
-                                <img class="img-fluid img-logo" src="public/images/logo.png" alt="logo"></a></h1>
-                        <a class="icon-menu display-md-none" id="btn-nav-switch" href="javascript:;">
-                            <img src="public/images/bars2.svg " width="100%" alt=""></a>
-               
+                    <h1> <a href="index.html">
+                            <img class="img-fluid img-logo" src="public/images/logo.png" alt="logo"></a></h1>
+                    <a class="icon-menu display-md-none" id="btn-nav-switch" href="javascript:;">
+                        <img src="public/images/bars2.svg " width="100%" alt=""></a>
+
                     <nav class="list">
 
                         <ul class="flex-space-between">
@@ -159,41 +164,36 @@
 
         <section class="pt-5  pb-2">
             <div class="container hotproduct-align ">
+
+
                 <h2 class="index-h2-pb80 text-center text-color-black">熱門商品</h2>
 
-                <div class="row  flex-center icon-parent ">
-                    <div class="icon-arrow-l">
-                        <img src="public/images/arrow-left.png" alt="arrow1-left">
+                <div class="banner">
+                    <div class="banner-img">
+                        <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                        <h3 class="title text-center">檸檬草蠟燭</h3>
+                    </div>
+                    <div class="banner-img">
+                        <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                        <h3 class="title text-center">薰衣草蠟燭</h3>
                     </div>
 
-                    <div class="col-4 col-md-4 col-lg-4 text-center">
-                        <a href="#">
-                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
-                            <h3 class="title text-center">薰衣草蠟燭</h3>
-                        </a>
+                    <div class="banner-img">
+                        <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                        <h3 class="title text-center">薰衣草蠟燭</h3>
                     </div>
 
-                    <div class="col-4 col-md-4 col-lg-4 text-center">
-                        <a href="#">
-                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
-                            <h3 class="title text-center">玫瑰草蠟燭</h3>
-                        </a>
+                    <div class="banner-img">
+                        <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                        <h3 class="title text-center">玫瑰草蠟燭</h3>
                     </div>
-
-                    <div class="col-4 col-md-4 col-lg-4 text-center">
-                        <a href="#">
-                            <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
-                            <h3 class="title text-center">鳶尾花蠟燭</h3>
-                        </a>
-                    </div>
-
-                    <div class="icon-arrow-r">
-                        <img src="public/images/arrow-right.png" alt="arrow-right">
+                    <div class="banner-img">
+                        <img class="img-fluid img-rounded" src="public/images/product1.png" alt="">
+                        <h3 class="title text-center">鳶尾花蠟燭</h3>
                     </div>
 
                 </div>
             </div>
-
         </section>
 
     </main>
@@ -237,10 +237,48 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="public/js/WOW-master/dist/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="public/js/index.js"></script>
 
+    <!-- 自定義 js -->
+    <script>
+        $('.banner').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
 
-
+    </script>
 </body>
 
 </html>

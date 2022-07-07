@@ -75,6 +75,7 @@ $('.child').css({
 $('.child').width(childTotalWidth); //子層總寬 = 父層寬度*子層圖片個數(進到畫面讀一次)
 
 $('.child>img').width(parentWidth); //子層下的圖片寬 = 父層寬度
+//loading-star//
 
 $(window).on('load', function () {
   // console.log('window load',$('img').height())
@@ -87,6 +88,7 @@ $(window).on('load', function () {
   $('.child').width(childTotalWidth);
   $('.child>img').width(parentWidth);
 }); // window load end
+// //loading-end//
 // for 迴圈 從0到圖片總數-2 的條件下，i累加1
 
 for (var i = 0; i < imgLength - 3; i++) {
@@ -161,4 +163,6 @@ function common() {
 
 setInterval(function () {
   $('.right-arrow').click();
-}, 5000);
+}, 5000); // 外掛狗狗
+
+new WOW().init();

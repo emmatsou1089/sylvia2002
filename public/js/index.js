@@ -61,7 +61,7 @@ $('.page-top').on('click', function(){
 
 
 
-        // 輪播// 
+        // 輪播// ================================================
         console.log('一開始執行',$('img').height())
 
         $('.child').prepend( $('.child>img').last().clone() ) //第二層裡面最前面 補上 圖片陣列中的最後一個 的複製元素

@@ -811,7 +811,8 @@ main > .container p {
   /* right:25px */
 }
 
-.slick-next:before, .slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
   color: #F0A7A7;
 }
 
@@ -965,14 +966,17 @@ p {
 }
 
 .border-line {
-  border: 1px solid #CCCCCC;
+  border: 2px solid #CCCCCC;
   border-radius: 5px;
   margin: 0;
+  padding: 0;
   vertical-align: top;
 }
 
 .news-img {
   vertical-align: top;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .news-h3 {

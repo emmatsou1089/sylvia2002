@@ -56,21 +56,24 @@ img {
     vertical-align: top;
 }
 
-.img-wrap{
+.img-wrap {
     display: block;
     position: relative;
     // background-color: red;
     margin-bottom: 10px;
 }
-.img-overlay{
+
+.img-overlay {
     overflow: hidden;
     border-radius: 8px;
 }
-.img-wrap img{
+
+.img-wrap img {
     vertical-align: top;
     transition: all .5s;
 }
-.img-wrap img:hover{
+
+.img-wrap img:hover {
     transform: scale(1.5);
 }
 
@@ -221,7 +224,7 @@ body {
 }
 
 // loading
-.loading-overlay{
+.loading-overlay {
     position: fixed;
     /* top:0;
     left:0;
@@ -229,8 +232,8 @@ body {
     bottom:0; */
     width: 100vw;
     height: 100vh;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: $color-white;
     z-index: 999;
     display: flex;
@@ -241,12 +244,16 @@ body {
     transition: .3s all;
     transition-delay: 1s;
 }
-.loading-overlay.active{
-    top:-100vh;
+
+.loading-overlay.active {
+    top: -100vh;
 }
+
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid $color-whiteG; /* Blue */
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid $color-whiteG;
+    /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -257,7 +264,7 @@ body {
     width: 150px;
     margin-bottom: 15px;
     margin-left: 20px;
-  }
+}
 
 
 
@@ -418,11 +425,11 @@ header {
 
     }
 
-    .thumbnails>img{
-        width:45px ;
+    .thumbnails>img {
+        width: 45px;
         margin-right: 10px;
         margin-bottom: 10px;
-        border:2px solid white;
+        border: 2px solid white;
         cursor: pointer;
     }
 }
@@ -757,26 +764,31 @@ main>.container p {
 
 // 熱門+輪播 開始
 ////////////////
-.banner{
+.banner {
     width: 100%;
     /* max-width: 600px; */
     margin: auto;
 }
 
 
-.banner-img{
-     margin: 10px; 
+.banner-img {
+    margin: 10px;
 }
-.slick-prev{
+
+.slick-prev {
     /* left:25px; */
     z-index: 10;
 }
-.slick-next{
+
+.slick-next {
     /* right:25px */
 }
-.slick-next:before, .slick-prev:before{
-    color:$color-p;
+
+.slick-next:before,
+.slick-prev:before {
+    color: $color-p;
 }
+
 // 熱門+輪播 結束
 
 
@@ -921,25 +933,29 @@ footer>.container p {
 
 
 
-.main-img{
+.main-img {
     margin-bottom: 10px;
 }
-.thumbnails{
+
+.thumbnails {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
-.thumbnails>img{     
-    width:73px ;
+
+.thumbnails>img {
+    width: 73px;
     margin-right: 10px;
     margin-bottom: 10px;
-    border:2px solid white;
+    border: 2px solid white;
     cursor: pointer;
 }
-.thumbnails>img:last-child{ 
+
+.thumbnails>img:last-child {
     margin-right: 0px;
 }
-.thumbnails>img.active{
-    border:3px solid $color-p;
+
+.thumbnails>img.active {
+    border: 3px solid $color-p;
 }
 
 .button {
@@ -994,16 +1010,18 @@ p {
 // news區 star=================================================================
 
 .border-line {
-    border: 1px solid $color-whiteG;
+    border: 2px solid $color-whiteG;
     border-radius: 5px;
     margin: 0;
+    padding: 0;
     vertical-align: top;
 
 }
 
-.news-img{
-    // border-radius: 5px;
+.news-img {
     vertical-align: top;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .news-h3 {
@@ -1129,7 +1147,7 @@ input {
 .store-r {
     width: 100%;
     align-items: center;
-    padding-top:30px;
+    padding-top: 30px;
     justify-content: center;
     text-align: center;
 }
@@ -1144,11 +1162,8 @@ input {
 
 .store-img {
     align-items: center;
-    
-   
+
+
 }
 
 // 門市據點end=========
-
-
-

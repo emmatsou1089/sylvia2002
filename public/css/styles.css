@@ -808,10 +808,6 @@ main > .container p {
   z-index: 10;
 }
 
-.slick-next {
-  /* right:25px */
-}
-
 .slick-next:before,
 .slick-prev:before {
   color: #F0A7A7;
@@ -972,12 +968,13 @@ p {
   margin: 0;
   padding: 0;
   vertical-align: top;
+  overflow: hidden;
 }
 
 .news-img {
   vertical-align: top;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  padding: 0;
+  margin: 0;
 }
 
 .news-h3 {

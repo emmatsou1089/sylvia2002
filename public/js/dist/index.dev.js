@@ -26,7 +26,7 @@ if (windowWidth >= 768) {
     $(this).find('.submenu').toggleClass('active');
   }); // nav>ul>li end
 } // windowWidth>=768 end
-// 捲軸事件
+// 捲軸事件top
 // 定義捲軸高變數
 
 
@@ -53,6 +53,7 @@ $('.page-top').on('click', function () {
     scrollTop: 0
   });
 }); //.page-top
+// 捲軸事件top end
 // 輪播// ================================================
 
 console.log('一開始執行', $('img').height());

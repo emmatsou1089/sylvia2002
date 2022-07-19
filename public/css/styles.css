@@ -954,12 +954,44 @@ p {
   max-width: 150px;
 }
 
+.math {
+  background-color: #ffffff;
+  display: inline-block;
+  border: 1px solid #4D4D4D;
+  text-align: center;
+}
+
+.math-r,
+.math-l {
+  border: 0;
+  background-color: #ffffff;
+}
+
 .math-bar {
+  background-color: #ffffff;
+  border: 0;
   text-align: center;
   align-items: center;
-  width: 15%;
+  width: 80%;
   margin: 0;
   border-radius: 0px;
+}
+
+.shop-button {
+  display: block;
+  text-align: center;
+  margin: 20px 0px;
+  padding: 5px 0px;
+  background-color: #9CDED2;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #4D4D4D;
+  font-weight: 700;
+  width: 60%;
+}
+
+.shop-button:hover {
+  background-color: #F0A7A7;
 }
 
 .border-line {

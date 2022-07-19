@@ -995,13 +995,48 @@ p {
     max-width: 150px;
 }
 
+.math {
+    background-color: #ffffff;
+    display: inline-block;
+    border: 1px solid $color-black;
+    text-align: center;
+}
+
+.math-r,
+.math-l {
+    border: 0;
+    background-color: #ffffff;
+
+}
+
+
+
 .math-bar {
-    // background-color: #F0A7A7;
+    background-color: $color-white;
+    border: 0;
     text-align: center;
     align-items: center;
-    width: 15%;
+    width: 80%;
     margin: 0;
     border-radius: 0px;
+}
+
+.shop-button {
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 5px 0px;
+    background-color: $color-b;
+    color: $color-white;
+    border-radius: 5px;
+    border: 1px solid $color-black;
+    font-weight: 700;
+    width: 60%;
+
+}
+
+.shop-button:hover {
+    background-color: #F0A7A7;
 }
 
 // 產品細節區 end==========================================================
@@ -1026,7 +1061,7 @@ p {
     vertical-align: top;
     padding: 0;
     margin: 0;
-    
+
 }
 
 .news-h3 {
